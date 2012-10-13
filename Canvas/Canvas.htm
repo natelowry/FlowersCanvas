@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <style type="text/css">
@@ -11,7 +12,7 @@
         {
         }
     </style>
-    <title>Canvas</title>
+    <title>Flowers!</title>
     <script src="Scripts/kinetic-v4.0.3.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="Scripts/jquery-1.8.2.min.js"></script>
     <script type="text/javascript">
@@ -133,7 +134,7 @@
             }
 
             function getRandomImage() {
-                return ImageBase + (Math.round(Math.random() * NumberOfImages)) + ImageExt;
+                return ImageBase + (Math.round(Math.random() * NumberOfImages) + 1) + ImageExt;
             }
 
 
@@ -155,6 +156,12 @@
             $(window).on('mouseup', function (evt) {
                 //place a flower here
                 addFlowerAt(evt.clientX, evt.clientY);
+            });
+
+            $(window).on('touchend', function (evt) {
+                //place a flower here
+    	        var t = evt.originalEvent.touches[0] || evt.originalEvent.changedTouches[0];
+                addFlowerAt(t.pageX, t.pageY);
             });
         });
     </script>
