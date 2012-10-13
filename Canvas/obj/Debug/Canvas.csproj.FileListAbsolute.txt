@@ -1,0 +1,5 @@
+c:\users\nate\documents\visual studio 2010\Projects\Canvas\Canvas\bin\Canvas.dll
+c:\users\nate\documents\visual studio 2010\Projects\Canvas\Canvas\bin\Canvas.pdb
+c:\users\nate\documents\visual studio 2010\Projects\Canvas\Canvas\obj\Debug\ResolveAssemblyReference.cache
+c:\users\nate\documents\visual studio 2010\Projects\Canvas\Canvas\obj\Debug\Canvas.dll
+c:\users\nate\documents\visual studio 2010\Projects\Canvas\Canvas\obj\Debug\Canvas.pdb
